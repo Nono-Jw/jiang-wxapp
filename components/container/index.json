@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "safe-bottom": "../safe-bottom/index"
+  }
+}

@@ -1,0 +1,24 @@
+.container {}
+
+.container-header {
+  position: relative;
+  width: 100%;
+  z-index: 99;
+}
+
+.container-header-fixed,
+.container-bottom-fixed {
+  position: fixed;
+  width: 100%;
+  left: 0;
+}
+
+.container-header-fixed {
+  top: 0;
+}
+
+.container-bottom-fixed {
+  z-index: 98;
+  bottom: 0;
+  background-color: #fff;
+}
