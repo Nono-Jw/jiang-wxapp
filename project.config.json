@@ -50,7 +50,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.19.4",
   "appid": "wx18d3762888212542",
-  "projectname": "pagoda-weapp",
+  "projectname": "wei-weapp",
   "debugOptions": {
     "hidedInDevtools": []
   },

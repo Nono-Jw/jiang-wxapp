@@ -1,0 +1,69 @@
+.wei-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wei-multi-ellipsis--l2 {
+  -webkit-line-clamp: 2;
+}
+.wei-multi-ellipsis--l2,
+.wei-multi-ellipsis--l3 {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wei-multi-ellipsis--l3 {
+  -webkit-line-clamp: 3;
+}
+.wei-clearfix:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.wei-hairline,
+.wei-hairline--bottom,
+.wei-hairline--left,
+.wei-hairline--right,
+.wei-hairline--surround,
+.wei-hairline--top,
+.wei-hairline--top-bottom {
+  position: relative;
+}
+.wei-hairline--bottom:after,
+.wei-hairline--left:after,
+.wei-hairline--right:after,
+.wei-hairline--surround:after,
+.wei-hairline--top-bottom:after,
+.wei-hairline--top:after,
+.wei-hairline:after {
+  border: 0 solid #ebedf0;
+  bottom: -50%;
+  box-sizing: border-box;
+  content: ' ';
+  left: -50%;
+  pointer-events: none;
+  position: absolute;
+  right: -50%;
+  top: -50%;
+  transform: scale(0.5);
+  transform-origin: center;
+}
+.wei-hairline--top:after {
+  border-top-width: 1px;
+}
+.wei-hairline--left:after {
+  border-left-width: 1px;
+}
+.wei-hairline--right:after {
+  border-right-width: 1px;
+}
+.wei-hairline--bottom:after {
+  border-bottom-width: 1px;
+}
+.wei-hairline--top-bottom:after {
+  border-width: 1px 0;
+}
+.wei-hairline--surround:after {
+  border-width: 1px;
+}

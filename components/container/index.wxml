@@ -5,12 +5,12 @@
     </view>
     <view style="height: {{headerHeight}}px"></view>
   </view>
-  <view class="relative">
+  <view class="relative" style="height: {{contentArea ? 'calc(100vh - '+(headerHeight + bottomHeight)+'px)' : 'auto'}}">
     <slot></slot>
-    <!-- <view v-if="loadConfig.show" style="padding: 20rpx 0"> -->
-    <!-- <u-loadmore :status="loadConfig.status" :load-text="{ loadmore: '轻轻上拉', loading: '努力加载中', nomore: '实在没有了' }" icon-color="#008C71" /> -->
-    <!-- </view> -->
-    <watermark wx:if="{{showWatermark}}" width="{{160}}" height="{{220}}" opacity="{{0.1}}" contents="{{['11111', '222222']}}" zindex="{{96}}" />
+    <view wx:if="{{showLoading}}" class="container-loading">
+      <loading size="24px">{{ loadingText }}</loading>
+    </view>
+    <watermark wx:if="{{showWatermark}}" width="{{160}}" height="{{220}}" opacity="{{0.1}}" contents="{{watermarkContent}}" zindex="{{96}}" />
   </view>
   <view style="height: {{bottomHeight}}px"></view>
   <view class="container-bottom-fixed" style="visibility: {{showFixedBottom ? 'visible' : 'hidden'}}">

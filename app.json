@@ -11,6 +11,7 @@
   "usingComponents": {
     "container": "./components/container/index",
     "watermark": "./components/watermark/index",
-    "safe-bottom": "./components/safe-bottom/index"
+    "safe-bottom": "./components/safe-bottom/index",
+    "loading": "./components/loading/index"
   }
 }

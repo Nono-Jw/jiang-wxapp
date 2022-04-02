@@ -22,3 +22,8 @@
   bottom: 0;
   background-color: #fff;
 }
+
+.container-loading {
+  padding: 20rpx 0;
+  text-align: center;
+}

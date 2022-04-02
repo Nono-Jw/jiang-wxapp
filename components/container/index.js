@@ -3,43 +3,38 @@ Component({
     multipleSlots: true, // 在组件定义时的选项中启用多slot支持
   },
   properties: {
-    showCustomHeader: {
-      type: Boolean,
-      value: false,
-    },
     safeBottom: {
       type: Boolean,
       value: true,
-    },
-    searchConfig: {
-      type: Object,
-      value: () => ({
-        show: false,
-        value: '',
-        placeholder: '',
-        showLocation: false,
-        disabled: false,
-        showAction: false,
-      }),
     },
     headerBgColor: {
       type: String,
       value: 'transparent',
     },
-    loadConfig: {
-      type: Object,
-      value: () => ({
-        show: false,
-        status: 'loadmore',
-      }),
+    showLoading: {
+      type: Boolean,
+      value: false,
+    },
+    loadingText: {
+      type: String,
+      value: '加载中',
     },
     showFixedBottom: {
       type: Boolean,
       value: true,
     },
+    // 内容区模式
+    contentArea: {
+      type: Boolean,
+      value: false,
+    },
     showWatermark: {
       type: Boolean,
       value: false,
+    },
+    watermarkContent: {
+      type: Array,
+      value: () => [],
     },
   },
   data: {
