@@ -34,7 +34,7 @@ Component({
     },
     watermarkContent: {
       type: Array,
-      value: () => [],
+      value: [],
     },
   },
   data: {
@@ -42,23 +42,23 @@ Component({
     bottomHeight: 34,
   },
   ready() {
-    this.updateHeaderAndBottomHeight();
+    this.updateHeaderAndBottomHeight()
   },
   methods: {
     updateHeaderAndBottomHeight() {
-      const query = this.createSelectorQuery();
+      const query = this.createSelectorQuery()
       query
         .select('.container-header-fixed')
         .boundingClientRect((rect) => {
-          this.setData({ headerHeight: rect.height });
+          this.setData({ headerHeight: rect.height })
         })
-        .exec();
+        .exec()
       query
         .select('.container-bottom-fixed')
         .boundingClientRect((rect) => {
-          this.setData({ bottomHeight: rect.height });
+          this.setData({ bottomHeight: rect.height })
         })
-        .exec();
+        .exec()
     },
   },
-});
+})

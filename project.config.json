@@ -1,13 +1,13 @@
 {
   "description": "项目配置文件",
   "packOptions": {
-    "ignore": [
-      {
-        "type": "file",
-        "value": ".eslintrc.js"
-      }
-    ]
+    "ignore": []
   },
+  "miniprogramRoot": "miniprogram/",
+  "compileType": "miniprogram",
+  "libVersion": "2.23.2",
+  "appid": "wx18d3762888212542",
+  "projectname": "wei-weapp",
   "setting": {
     "urlCheck": true,
     "es6": true,
@@ -45,12 +45,8 @@
     "disableUseStrict": false,
     "minifyWXML": true,
     "showES6CompileOption": false,
-    "useCompilerPlugins": false
+    "useCompilerPlugins": ["typescript", "sass"]
   },
-  "compileType": "miniprogram",
-  "libVersion": "2.19.4",
-  "appid": "wx18d3762888212542",
-  "projectname": "wei-weapp",
   "debugOptions": {
     "hidedInDevtools": []
   },
